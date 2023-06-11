@@ -2,7 +2,7 @@ import Man from './man.png';
 import './index.css';
 function scene1() {
   return (
-    <div style={{ backgroundColor: '#9775FA', height: '812px' }}>
+    <div className='bg-[#9775FA] h-[812px]'>
       <img
         src={Man}
         alt='man'
