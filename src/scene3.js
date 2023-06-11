@@ -57,7 +57,7 @@ function scene3() {
         Remember me
       </div>
       <div className='absolute w-[30px] h-[18px] left-[325px] top-[551px] bg-[#34C759] rounded-[99px]'></div>
-      <div className='absolute w-[15.88px] h-[15.68px] left-[337.94px] top-[552.16px] bg-white rounded-full shadow'></div>
+      <div className='absolute w-[15.88px] h-[15.68px] left-[337.94px] top-[552.16px] bg-white rounded-full'></div>
       <div className='flex flex-row justify-center items-start pt-[15px] pr-[10px] pb-[10px] pl-[10px] gap-[10px] absolute w-[375px] h-[75px] left-[0px] top-[737px] bg-[#9775FA]'>
         <div className='flex-none order-0 grow-0 w-[64px] h-[19px] font-sans font-[500] not-italic text-[17px] leading-[110%] text-[#FEFEFE]'>
           Sign Up
