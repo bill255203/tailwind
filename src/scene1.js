@@ -1,6 +1,9 @@
 import Man from './man.png';
 import './index.css';
-function scene1() {
+import { useNavigate } from 'react-router-dom';
+
+function Scene1() {
+  const navigate = useNavigate();
   return (
     <div className='bg-[#9775FA] h-[812px]'>
       <img
@@ -26,11 +29,14 @@ function scene1() {
         </div>
       </div>
 
-      <div className='absolute w-[36px] h-[19px] left-[169px] top-[758px] bg-white font-sans font-[500] not-italic text-[17px] leading-[110%] text-center text-[#8F959E]'>
+      <button
+        onClick={() => navigate('/2')}
+        className='button1 absolute w-[36px] h-[19px] left-[169px] top-[758px] bg-white font-sans font-[500] not-italic text-[17px] leading-[110%] text-center text-[#8F959E]'
+      >
         Skip
-      </div>
+      </button>
     </div>
   );
 }
 
-export default scene1;
+export default Scene1;

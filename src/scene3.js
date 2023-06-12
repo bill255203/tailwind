@@ -3,11 +3,16 @@ import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
-function scene3() {
+function Scene3() {
+  const navigate = useNavigate();
   return (
     <div>
-      <div className='absolute w-[45px] h-[45px] left-[20px] top-[45px]  bg-[#F5F6FA] rounded-full'>
+      <div
+        onClick={() => navigate(-1)}
+        className='absolute w-[45px] h-[45px] left-[20px] top-[45px]  bg-[#F5F6FA] rounded-full'
+      >
         <Stack direction='row' alignItems='center' spacing={1}>
           <IconButton aria-label='delete' size='large'>
             <ArrowBackIcon />
@@ -58,7 +63,10 @@ function scene3() {
       </div>
       <div className='absolute w-[30px] h-[18px] left-[325px] top-[551px] bg-[#34C759] rounded-[99px]'></div>
       <div className='absolute w-[15.88px] h-[15.68px] left-[337.94px] top-[552.16px] bg-white rounded-full'></div>
-      <div className='flex flex-row justify-center items-start pt-[15px] pr-[10px] pb-[10px] pl-[10px] gap-[10px] absolute w-[375px] h-[75px] left-[0px] top-[737px] bg-[#9775FA]'>
+      <div
+        onClick={() => navigate('/4')}
+        className='flex flex-row justify-center items-start pt-[15px] pr-[10px] pb-[10px] pl-[10px] gap-[10px] absolute w-[375px] h-[75px] left-[0px] top-[737px] bg-[#9775FA]'
+      >
         <div className='flex-none order-0 grow-0 w-[64px] h-[19px] font-sans font-[500] not-italic text-[17px] leading-[110%] text-[#FEFEFE]'>
           Sign Up
         </div>
@@ -67,4 +75,4 @@ function scene3() {
   );
 }
 
-export default scene3;
+export default Scene3;

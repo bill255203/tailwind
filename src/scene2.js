@@ -1,6 +1,4 @@
-// import F from './f.png';
-// import G from './g.png';
-// import T from './t.png';
+import { useNavigate } from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -11,10 +9,14 @@ import {
   faFacebookF,
 } from '@fortawesome/free-brands-svg-icons';
 
-function scene2() {
+function Scene2() {
+  const navigate = useNavigate();
   return (
     <div className='bg-white'>
-      <div className='absolute w-[45px] h-[45px] left-[20px] top-[45px]  bg-[#F5F6FA] rounded-full'>
+      <div
+        onClick={() => navigate(-1)}
+        className='absolute w-[45px] h-[45px] left-[20px] top-[45px]  bg-[#F5F6FA] rounded-full'
+      >
         <Stack direction='row' alignItems='center' spacing={1}>
           <IconButton aria-label='delete' size='large'>
             <ArrowBackIcon />
@@ -73,7 +75,10 @@ function scene2() {
         Already have an account?{' '}
         <div className='font-bold text-black'> Signin</div>
       </div>
-      <div className='flex flex-row justify-center items-start pt-[15px] pr-[10px] pb-[10px] pl-[10px] gap-[10px] absolute w-[375px] h-[75px] left-[0px] top-[737px] bg-[#9775FA]'>
+      <div
+        onClick={() => navigate('/3')}
+        className='flex flex-row justify-center items-start pt-[15px] pr-[10px] pb-[10px] pl-[10px] gap-[10px] absolute w-[375px] h-[75px] left-[0px] top-[737px] bg-[#9775FA]'
+      >
         <div className='flex-none order-0 grow-0 w-[152px] h-[19px] font-sans font-[500] not-italic text-[17px] leading-[110%] text-[#FEFEFE]'>
           Create an Account
         </div>
@@ -82,4 +87,4 @@ function scene2() {
   );
 }
 
-export default scene2;
+export default Scene2;
