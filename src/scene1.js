@@ -18,12 +18,18 @@ function Scene1() {
       <div className='absolute w-[294px] h-[42px] left-[40px] top-[616px] bg-white font-sans font-[400] not-italic text-[15px] leading-[140%] text-center text-[#8F959E]'>
         Create your individual & unique style and look amazing everyday.
       </div>
-      <div className='flex flex-row justify-center items-center p-[10px] gap-[10px] absolute w-[152px] h-[60px] left-[30px] top-[678px] bg-[#F5F6FA] rounded-[10px]'>
+      <div
+        onClick={() => navigate('/2')}
+        className='flex flex-row justify-center items-center p-[10px] gap-[10px] absolute w-[152px] h-[60px] left-[30px] top-[678px] bg-[#F5F6FA] rounded-[10px]'
+      >
         <div className='absolute w-[36px] h-[19px] bg-[#F5F6FA] font-sans font-[500] not-italic text-[17px] leading-[110%] flex-none order-[0] grow-0 text-center text-[#8F959E]'>
           Men
         </div>
       </div>
-      <div className='flex flex-row justify-center items-center p-[10px] gap-[10px] absolute w-[152px] h-[60px] left-[192px] top-[678px] bg-[#9775FA] rounded-[10px]'>
+      <div
+        onClick={() => navigate('/2')}
+        className='flex flex-row justify-center items-center p-[10px] gap-[10px] absolute w-[152px] h-[60px] left-[192px] top-[678px] bg-[#9775FA] rounded-[10px]'
+      >
         <div className='absolute w-[62px] h-[19px] bg-[#9775FA]  font-sans font-[500] not-italic text-[17px] leading-[110%] flex-none order-[0] grow-0 text-center text-white'>
           Women
         </div>
