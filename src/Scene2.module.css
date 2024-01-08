@@ -1,0 +1,33 @@
+.navbar {
+  @apply absolute w-[45px] h-[45px] left-[20px] top-[45px]  bg-[#F5F6FA] rounded-full;
+}
+.mainText {
+  @apply absolute left-[85px] right-[85px] top-[12.93%] bottom-[83.25%] font-sans not-italic font-[600] text-[28px] tracking-[-0.0075em] leading-[110%] rounded-[10px];
+}
+.fbBox {
+  @apply absolute w-[335px] h-[50px] left-[20px] right-[20px] top-[321px] bottom-[441px] bg-[#4267B2] rounded-[10px];
+}
+.fbText {
+  @apply absolute w-[78px] h-[22px] left-[162px] top-[335px] text-white font-sans font-[600] not-italic text-[17px] leading-[22px] tracking-[-0.408px];
+}
+.twitterBox {
+  @apply absolute w-[335px] h-[50px] left-[20px] right-[20px] top-[381px] bottom-[381px] bg-[#1DA1F2] rounded-[10px];
+}
+.twitterText {
+  @apply absolute w-[57px] h-[22px] left-[172.5px] top-[395px] text-white font-sans font-[600] not-italic text-[17px] leading-[22px] tracking-[-0.408px];
+}
+.googleBox {
+  @apply absolute w-[335px] h-[50px] left-[20px] right-[20px] top-[441px] bottom-[321px] bg-red-500 rounded-[10px];
+}
+.googleText {
+  @apply absolute w-[58px] h-[22px] left-[172px] top-[455px] text-white font-sans font-[600] not-italic text-[17px] leading-[22px] tracking-[-0.408px];
+}
+.askText {
+  @apply absolute flex items-center w-[231px] h-[17px] left-[72px] top-[695px] bg-white font-sans font-[400] not-italic text-[15px] leading-[110%] text-center text-[#8F959E];
+}
+.createBox {
+  @apply flex flex-row justify-center items-start pt-[15px] pr-[10px] pb-[10px] pl-[10px] gap-[10px] absolute w-[375px] h-[75px] left-[0px] top-[737px] bg-[#9775FA];
+}
+.createText {
+  @apply flex-none grow-0 w-[152px] h-[19px] font-sans font-[500] not-italic text-[17px] leading-[110%] text-[#FEFEFE];
+}
